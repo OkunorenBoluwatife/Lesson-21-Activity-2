@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Check Word Example</title>
+    <script>
+        function myFunction() {
+            var str = "I like to eat mango.";
+            var patt = new RegExp("banana");
+            var res = patt.test(str);
+            document.getElementById("demo").innerHTML = res;
+        }
+    </script>
+</head>
+
+<body>
+    <p id="demo">Does "banana" exist in the sentence?</p>
+    <button onclick="myFunction()">Check</button>
+</body>
+
+</html>
